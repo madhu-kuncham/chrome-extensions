@@ -24,4 +24,4 @@ addForm.addEventListener('submit',e =>{
         addForm.reset();
     }
 });
-}
+
