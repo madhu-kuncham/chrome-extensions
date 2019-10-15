@@ -10,7 +10,7 @@
         "default_icon": "images.png"
     },
     "background": {
-        "scripts": ["background.js"],
+        "scripts": ["Todo.js"],
         "persistent": false
       },
    
