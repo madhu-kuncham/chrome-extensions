@@ -1,0 +1,26 @@
+{
+    "name" : "Chrome extension",
+    "description" : " basic level description",
+    "version": "1.0",
+    "manifest_version": 2,
+    "permissions": ["storage"],
+
+    "browser_action": {
+        "default_popup": "Todo.html",
+        "default_icon": "images.png"
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+      },
+   
+       "commands" : {
+           "-execute_browser_action": {
+               "suggested_key": {
+                   "default": "Ctrl+Shift+F",
+             "mac": "MacCtrl+Shift+F"
+           },
+           "description": "Opens Todo.html"
+               }
+           }
+       }
