@@ -1,15 +1,4 @@
-<<<<<<< HEAD
 
-'use strict';
-
-chrome.runtime.onInstalled.addListener(function() {
-  chrome.storage.sync.set({color: '#3aa757'}, function() {
-    console.log("The color is green.");
- 
-
-
-=======
->>>>>>> abd21a9e30230e28e996631b9c4ec76124bd9a70
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.Todos');
 
@@ -45,5 +34,3 @@ list.addEventListener('click', e=> {
     }
 })
 
-});
-});
