@@ -17,11 +17,17 @@ list.innerHTML += html;
 addForm.addEventListener('submit',e =>{
 
     e.preventDefault();
-    const Todo = addForm.addEventListener.value.trim();
+    const Todo = addForm.add.value.trim();
 
     if(Todo.length){
         generateTemplate(Todo);
         addForm.reset();
     }
 });
+//deletion
+list.addEventListener('click', e=> {
+    if(e.target.classList.contains('delete')){
+        e.target.parentElement.remove();
+    }
+})
 
