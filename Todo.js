@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 'use strict';
 
@@ -7,6 +8,8 @@ chrome.runtime.onInstalled.addListener(function() {
  
 
 
+=======
+>>>>>>> abd21a9e30230e28e996631b9c4ec76124bd9a70
 const addForm = document.querySelector('.add');
 const list = document.querySelector('.Todos');
 
@@ -28,13 +31,19 @@ list.innerHTML += html;
 
 
     e.preventDefault();
-    const Todo = addForm.addEventListener.value.trim();
+    const Todo = addForm.add.value.trim();
 
     if(Todo.length){
         generateTemplate(Todo);
         addForm.reset();
     }
 });
+//deletion
+list.addEventListener('click', e=> {
+    if(e.target.classList.contains('delete')){
+        e.target.parentElement.remove();
+    }
+})
 
 });
 });
