@@ -8,7 +8,7 @@ input [type=text],
 input[type=text]:focus{
     color: #fff;
     border: none;
-    background: rgba(red, green, blue, alpha);
+    background: rgba(0,0,0,0.2);
     max-width: 400px;
 
 }
